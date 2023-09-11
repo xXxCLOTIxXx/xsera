@@ -71,7 +71,6 @@ class Colors:
 
 
 	def hex(self, color: str, text: str = None) -> str:
-
 		if len(color) == 4:
 			color = '#'+color[1]*2+color[2]*2+color[3]*2
 		for hex_color, hexcolor in hex_colors.items():

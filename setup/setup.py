@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 
 info = {
     "name": "xsera",
-    "version": "1.0",
+    "version": "1.1.2",
     "github_page": "https://github.com/xXxCLOTIxXx/xsera",
-    "download_link": "/xXxCLOTIxXx/xsera/archive/refs/heads/main.zip",
+    "download_link": "https://github.com/xXxCLOTIxXx/amino.api/archive/refs/heads/main.zip",
     "license": "MIT",
     "author": "Xsarz",
     "author_email": "xsarzy@gmail.com",
@@ -29,9 +29,13 @@ info = {
     ],
 
     "install_requires": [
+        "numpy",
+        "aiohttp",
+        "requests",
     ]
 
 }
+
 
 
 if info.get("long_description"):
@@ -53,5 +57,5 @@ setup(
     long_description_content_type = info.get("long_description_content_type"),
     keywords = info.get("keywords"),
     install_requires = info.get("install_requires"),
-    packages = find_packages()
+    packages = find_packages(),
 )
